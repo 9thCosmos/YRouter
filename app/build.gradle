@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -34,5 +36,6 @@ dependencies {
     implementation project(':testmodule')
 
     api project(':yrouter')
-    annotationProcessor project(':yrouter_compiler')
+    //annotationProcessor project(':yrouter_compiler')
+    kapt project(':yrouter_compiler')
 }
