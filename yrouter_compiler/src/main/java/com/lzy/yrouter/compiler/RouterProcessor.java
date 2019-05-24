@@ -1,6 +1,5 @@
 package com.lzy.yrouter.compiler;
 
-import com.google.auto.service.AutoService;
 import com.lzy.yrouter.annotation.Module;
 import com.lzy.yrouter.annotation.Route;
 import com.squareup.javapoet.ClassName;
@@ -22,10 +21,10 @@ import java.util.Set;
 
 /**
  * @author Lizhengyu
- * @description
+ * @description AutoService不启作用，直接使用配置
  * @date 2019/4/11 14:29
  **/
-@AutoService(Processor.class)
+//@AutoService(Processor.class)
 public class RouterProcessor extends AbstractProcessor {
 
     private Types mTypeUtils;
