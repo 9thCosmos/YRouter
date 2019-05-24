@@ -1,0 +1,1 @@
+include ':app', ':yrouter_annotation', ':yrouter_compiler', ':yrouter', ':testmodule'
